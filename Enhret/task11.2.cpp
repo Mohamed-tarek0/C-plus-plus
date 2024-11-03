@@ -107,18 +107,14 @@ int main() {
         std::cout << std::endl;
     }
 
-    // Demonstrate borrowing and returning functionality
+   
     book1.borrowItem();
-    book1.borrowItem(); // Attempt to borrow an already borrowed book
+    book1.borrowItem(); 
     book1.returnItem();
 
     magazine2.borrowItem();
     magazine2.returnItem();
 
-    // Clean up dynamically allocated memory
-    // Note: In this example, we don't need to delete the objects because they are
-    //       allocated on the stack. However, if they were allocated on the heap
-    //       using new, we would need to delete them to prevent memory leaks.
 
     return 0;
 }
